@@ -1,0 +1,139 @@
+/* ------- list of media queries ------ */
+/* --------- CSS @import Rule --------- */
+// @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* -------- CSS @font-face Rule ------- */
+@font-face {
+    font-family: "Blackadder ITC";
+    src: url(/Fonts/ITCBLKAD.TTF);
+}
+
+.blackadder-cls{
+    font-family: Blackadder ITC; 
+}
+/* ------- list of media queries ------ */
+
+html{     
+    font-size: 1rem;
+}
+
+body{
+    font-family: 'Roboto light', sans-serif;
+}
+
+.logo-cls{
+    width: 10rem; 
+    height: 10rem;
+}
+
+.navbar-nav{
+    .nav-link{
+        &:hover {
+          // color: #03f8cb4d !important; /* Cambia el color del texto al pasar el mouse */
+          background-color: #add8e6 !important; /* Cambia el fondo al pasar el mouse */
+        }        
+    }
+    ul{
+        li{
+            a{
+                &:hover{
+                    // color: #03f8cb4d !important; /* Cambia el color del texto al pasar el mouse */
+                    background-color: #add8e6 !important; /* Cambia el fondo al pasar el mouse */
+                }
+            }
+        }
+    }
+} 
+
+/* CSS image zoom on hover */
+.card{
+    img{
+        transition: transform .2s; /* Animation */
+
+        &:hover{
+            transform: scale(1.03); /* (1.5 -> 150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+            cursor:pointer;
+        }
+    }
+}
+/* CSS image zoom on hover */
+
+/* Social media */
+.social-media-cls {    
+    a {
+        text-decoration: none;   
+    
+        img{
+            width: 2.5rem;
+            height: 2.5rem;
+            
+            &:hover{
+                background-color: #add8e6 !important;
+            }
+        }
+    }
+}
+
+/* Social media */
+
+/* suneo */
+.suneo-cls{
+    a{
+        text-decoration: none;
+        img{
+            background: transparent;
+            margin: 0rem 0rem 0rem 0rem;
+            padding: 0rem 0rem 0rem 0.5rem; 
+
+            max-width: 3rem;
+            height: 3rem;
+        }
+    }
+} 
+/* suneo */
+
+// X-Small devices (portrait phones, less than 576px)
+@media only screen and (max-width: 575.98px) { 
+    .header-cls{
+        .logo-unpa-cls{
+            a{
+                .logo-cls{      
+                    background-color: #FFFFFF; 
+                    width: 8rem; 
+                    height: 8rem;
+                }
+            }
+        }   
+
+        
+            .university-name-cls{                
+                .h2{
+                    font-size: 1.3rem;
+                }
+            }
+             
+    }
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@media only screen and (min-width: 575.98px) and (max-width: 767.98px){   
+    .header-cls{
+        .logo-unpa-cls{
+            a{
+                .logo-cls{      
+                    background-color: #FFFFFF; 
+                    width: 8rem; 
+                    height: 8rem;
+                }
+            }
+        }   
+
+        
+            .university-name-cls{                
+                .h2{
+                    font-size: 1.5rem;
+                }
+            }
+             
+    }
+}
